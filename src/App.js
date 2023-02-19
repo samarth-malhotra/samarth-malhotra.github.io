@@ -3,8 +3,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import info from "./info.json";
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useState } from "react";
-
-import samarth from "./images/samarth.jpg";
+// import samarth from "./images/samarth.jpg";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
