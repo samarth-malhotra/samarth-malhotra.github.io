@@ -1,11 +1,10 @@
 import "./App.css";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { BsSun } from "react-icons/bs";
 import info from "./info.json";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { useState } from "react";
 
@@ -56,9 +55,20 @@ function App() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <AiFillTwitterCircle
+              className="cursor-pointer"
+              onClick={() => window.open("https://twitter.com/warsomesam")}
+            />
+            <AiFillLinkedin
+              className="cursor-pointer"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/samarth-malhotra")
+              }
+            />
+            <AiFillGithub
+              className="cursor-pointer"
+              onClick={() => window.open("https://github.com/samarth-malhotra")}
+            />
           </div>
         </section>
       </main>
