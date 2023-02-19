@@ -1,12 +1,10 @@
 import "./App.css";
 import { FaMoon, FaSun } from "react-icons/fa";
 import info from "./info.json";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useState } from "react";
+
+import samarth from "./images/samarth.jpg";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,10 +20,6 @@ function App() {
                   <FaMoon
                     onClick={() => {
                       setDarkMode(!darkMode);
-                      console.log(
-                        "🚀 ~ file: App.js:25 ~ App ~ prev",
-                        darkMode
-                      );
                     }}
                     className="cursor-pointer text-2xl"
                   />
@@ -34,10 +28,6 @@ function App() {
                   <FaSun
                     onClick={() => {
                       setDarkMode(!darkMode);
-                      console.log(
-                        "🚀 ~ file: App.js:34 ~ App ~ prev",
-                        darkMode
-                      );
                     }}
                     className="cursor-pointer text-2xl dark:text-white"
                   />
@@ -55,9 +45,11 @@ function App() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-white">
-            <AiFillTwitterCircle
+            <AiFillFacebook
               className="cursor-pointer"
-              onClick={() => window.open("https://twitter.com/warsomesam")}
+              onClick={() =>
+                window.open("https://www.facebook.com/malhotra.samarth")
+              }
             />
             <AiFillLinkedin
               className="cursor-pointer"
@@ -70,6 +62,13 @@ function App() {
               onClick={() => window.open("https://github.com/samarth-malhotra")}
             />
           </div>
+          {/* <div>
+            <img
+              className="p-5 relative mx-auto rounded-full w-80 h-80"
+              src={samarth}
+              alt=""
+            />
+          </div> */}
         </section>
       </main>
     </div>
